@@ -1,0 +1,51 @@
+#head{
+    background-color : #eefaff;
+    border: 1px double cadetblue;
+    border-radius : 18px;
+    box-shadow : 10px 10px 5px #888888;
+    clear : both;
+    margin : 1% 4% auto;
+    padding : 1.5%;
+    width : 80%;
+}
+
+.assignmentLeft{
+    background-color : #eef3f7;
+    border : 1px double cadetblue;
+    border-radius : 16px;
+    box-shadow : 10px 10px 5px #888888;
+    float : left;
+    margin : 1% 1% 1% 4% ;
+    padding : 1%;
+    width : 40%;
+}
+.assignmentRight{
+    background-color : #eef3f7;
+    border : 1px double cadetblue;
+    border-radius : 16px;
+    box-shadow : 10px 10px 5px #888888;
+    float : right;
+    margin : 1% 4% 1% 1%;
+    padding : 1%;
+    width : 40%;
+}
+
+#footer{
+    background-color : #eefaff;
+    border: 1px double cadetblue;
+    border-radius : 18px;
+    box-shadow : 10px 10px 5px #888888;
+    clear : both;
+    margin : 1% 4% auto;
+    padding : 1.5%;
+    width : 80%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Microsoft New Tai Lue";
+}
+
+#backButton{
+	display:inline;
+	text-align: center;
+}

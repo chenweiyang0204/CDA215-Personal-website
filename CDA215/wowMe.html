@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WowMePage</title>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChoZpLbgJ-hiPYMyODXxPShQurMdvbniM&language=en"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="wowMe.js"></script>
+
+    <link rel="stylesheet" href="wowMe.css">
+
+</head>
+<body  onload="initial();getSelectValue()">
+
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inline.html">HW #2</a></li>
+            <li><a href="table.html">HW #3</a></li>
+            <li><a href="html5.html">HW #4</a></li>
+            <li><a href="index_old.html">HW #5</a></li>
+            <li><a href="advcss.html">HW #6</a></li>
+            <li><a href="form.html">HW #7</a></li>
+            <li><a href="multimedia.html">HW #8</a></li>
+            <li><a href="JavaScript.html">HW #9</a></li>
+            <li><a href="validation.html">HW #10</a></li>
+            <li><a href="wowMe.html">Wow Me</a></li>
+            <li><a href="KrugBookWebSite.html">Extra Credit</a></li>
+
+
+
+        </ul>
+    </div>
+    <div id="timeDisplay">
+    </div><br>
+    <div id="watch">
+    <div id="main">
+        <div id="controlPanel">
+            <select id="selection" onchange="getSelectValue()">
+                <option value="search" selected="selected">Search</option>
+                <option value="direction">Direction</option>
+            </select>
+        </div>
+
+        <div id="inputPanel">
+
+        </div>
+        <div id="weather"></div>
+    </div>
+    <div id="map"></div>
+    </div>
+    <div style="text-align: center">
+        <form action="index.html" method="get" >
+            <button>Go back to Home Page</button>
+        </form>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,47 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    padding-left: 30px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#book{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#book p{
+    text-align: left;
+    font-size: 20px;
+}
+
+#book img{
+    height: 600px;
+    width: 400px;
+}
+
+#contact{
+    text-align: center;
+    padding-top: 60px;
+}
+#contact h2{
+    color: #333333;
+}

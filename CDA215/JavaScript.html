@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+        function timeDisplay(){
+            var a = new Date();
+            year = a.getFullYear();
+            month = a.getMonth()+1;
+            days = a.getDate();
+
+            var s = year.toString() + "-" + month.toString() + "-" + days.toString();
+
+            timecode = "<p style='background-color: aqua'> Current Date Is : "+s+"</p>\n"
+            timecode += "<p style='background-color: aqua'> Deadline Is : 2018-11-12 </p>\n"
+
+            var deadline = new Date(2018,11,12);
+
+            var today = new Date(a.getFullYear(),a.getMonth()+1,a.getDate())
+            var oneDayTime = 24 * 60 * 60 * 1000;
+
+            var diff = (today.getTime() - deadline.getTime())/(oneDayTime);
+
+            if(diff<=0){
+                var dif = Math.round(Math.abs((today.getTime() - deadline.getTime())/(oneDayTime)));
+
+                timecode += "<p style='background-color: aqua'> Due In " +(dif).toString() +" Days</p>";
+            }
+            else{
+                var dif = Math.round(Math.abs((today.getTime() - deadline.getTime())/(oneDayTime)));
+
+                timecode += "<p style='background-color: aqua'> Deadline Pass " +(dif).toString() +" Days</p>";
+            }
+            document.getElementById("time").innerHTML = timecode;
+        }
+
+        function table() {
+            var monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"];
+            var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+            var tableCode = "<table style=\"border-radius: 22px;\">\n";
+            tableCode    += "  <tr>\n"
+            tableCode    += "    <th>Month<br/>Number</th>\n"
+            tableCode    += "    <th>Month<br/>Name</th>\n"
+            tableCode    += "    <th>Days in<br/>Month</th>\n"
+            tableCode    += "  </tr>\n"
+
+            for (var  i = 0; i < monthNames.length; i++) {
+                if (i % 2 == 0) {
+                    tableCode += "  <tr>\n"
+                } else {
+                    tableCode += "  <tr style=\"background-color: aquamarine\">\n"
+                }
+                tableCode += "    <td style=\"color: #000; text-align: center;\">"
+                    + (i + 1) + "</td>\n"
+                tableCode += "    <td style=\"color: #000; text-align: center;\">"
+                    + monthNames[i] + "</td>\n"
+                tableCode += "    <td style=\"color: #000; text-align: center;\">"
+                    + monthDays[i] + "</td>\n"
+                tableCode += "  </tr>\n"
+            }
+
+            tableCode += "</table>\n"
+
+            document.getElementById("table").innerHTML = tableCode;
+        }
+    </script>
+</head>
+<body onload="timeDisplay();table()">
+    <div id="time" style="border: antiquewhite;">
+    </div>
+    <div id="table" style="border: aquamarine;" ></div>
+
+    <div style="text-align: center">
+        <form action="index.html" method="get">
+            <button>Go back to Home Page</button>
+        </form>
+    </div>
+</body>
+</html>

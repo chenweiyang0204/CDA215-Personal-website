@@ -1,0 +1,28 @@
+img{
+    width: 50px;
+    height: 50px;
+    float: right;
+
+}
+
+p{
+    font-family: Verdana,Serif;
+
+}
+@media print{
+    #header,#graphic,#backButton{
+        display: none;
+    }
+    #table{
+        border: 1px solid #000;
+    }
+    #intro{
+        font-family: Arial,sans-serif;
+    }
+    #list >li >a{
+        color:green;
+    }
+    td{
+        border:solid 1px
+    }
+}

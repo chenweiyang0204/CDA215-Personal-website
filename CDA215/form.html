@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        fieldset{
+            border:1px solid #888888;
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-right:50px;
+            margin-bottom:20px;
+            padding:15px;
+            background : whitesmoke;
+        }
+        div{
+            width : 500px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: 50px;
+            border : 3px solid #73AD21;
+            background: aliceblue;
+        }
+        legend{
+            font-family:"Segoe UI Emoji";
+            font-weight: bolder;
+        }
+        input{
+            height: 40px;
+            width: 300px;
+            font-size: 20px;
+        }
+        select{
+            height: 40px;
+        }
+
+        #submit{
+            margin-left: 100px;
+            margin-bottom: 50px;
+            height:50px;
+            width: 300px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>
+        Submit your Contact information
+    </h1>
+    <div>
+        <form id="form" name="form" method="post" action="mailto:wchen38@buffalo.edu">
+            <fieldset>
+                <legend>First Name</legend>
+                <label>
+                    <input type="text" id="firstname" name="firstname" tabIndex="1" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Last Name</legend>
+
+                <label>
+                    <input type="text" id="lastname" name="lastname" tabIndex="2" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address</legend>
+                <label>
+                    <input type="text" id="address" name="address" tabIndex="3" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>City</legend>
+                <label>
+                    <input type="text" id="city" name="city" tabIndex="4" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>State/Province</legend>
+                <label>
+                    <select id="state" tabIndex="5">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Zip/Postal Code</legend>
+                <label>
+                    <input type="text" id="zipcode" name="zipcode" tabIndex="6" pattern="[0-9]{5}" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Phone Number</legend>
+                <label>
+                    <input type="text" id="phonenumber" name="phonenumber" pattern="[0-9]{10}" tabIndex="7" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Email Address</legend>
+                <label>
+                    <input type="text" id="emailaddress" name="emailaddress" tabIndex="8" required>
+                </label>
+            </fieldset>
+
+            <br><br><br><br>
+            <input type="submit" id="submit" name="submit" value="Submit" tabIndex="9">
+        </form>
+    </div>
+
+    <form style="display: inline; margin-left: 600px;" action="index.html" method="get">
+        <button>Go back to Home Page</button>
+    </form>
+</body>
+</html>

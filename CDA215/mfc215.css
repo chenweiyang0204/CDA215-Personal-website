@@ -1,0 +1,56 @@
+p{
+	font-size:25px;
+	color:purple;
+	font-family:Georgia;
+	}
+h1,h3,h4,h5,h6{
+	text-align: center;
+	color:green;
+	font-family:Georgia;
+	}
+h2{
+	color:cadetblue;
+	font-family: Georgia;
+}
+
+hr{
+	font-weight:bold
+	}
+b{
+	font-weight:200
+	}
+table{
+	border:solid;
+	background-color:black;
+	width:100%
+	}
+th{
+	color:red;
+	font-family:courier;
+	text-align:center
+	}
+td{
+	color:white;
+	font-family:courier;
+	text-align:center
+	}
+
+#audio1,#audio2{
+	margin-top: 4%;
+	text-align: center;
+}
+
+#backButton{
+	display:inline;
+	text-align: center;
+}
+
+video{
+	width: 720px;
+	height: 360px;
+}
+
+iframe{
+	width:720px;
+	height:360px;
+}
